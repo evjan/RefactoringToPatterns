@@ -19,6 +19,23 @@ describe Loan do
     end
   end
 
+  context 'revolver loan' do
+
+    let(:commitment) { 12 }
+    let(:start) { 0 }
+    let(:expiry) { 0 }
+    let(:risk_rating) { 1 }
+
+    subject { described_class.new_revolver(commitment, start, expiry, risk_rating) }
+
+    describe 'capital' do
+      it 'works' do
+        expect(subject.capital).to be_within(0.1).of(288)
+      end
+    end
+  end
+
+
   context 'Advised Line loan' do
 
     let(:commitment) { 12 }
@@ -30,7 +47,7 @@ describe Loan do
 
     describe 'capital' do
       it 'works' do
-        expect(subject.capital).to be_within(0.1).of(14.4)
+        expect(subject.capital).to be_within(0.1).of(28.8)
       end
     end
   end

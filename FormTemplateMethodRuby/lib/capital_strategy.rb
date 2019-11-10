@@ -6,7 +6,7 @@ class CapitalStrategy
   end
 
   def duration(loan)
-    12
+    24
   end
 
   def risk_factor_for(loan)
