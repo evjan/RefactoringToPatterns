@@ -1,0 +1,21 @@
+source 'https://rubygems.org'
+
+git_source(:github) do |repo_name|
+  repo_name = "#{repo_name}/#{repo_name}" unless repo_name.include?('/')
+  "https://github.com/#{repo_name}.git"
+end
+
+gem 'byebug', platform: :mri
+
+gem 'rails_best_practices'
+gem 'rake'
+gem 'rspec-wait'
+gem 'rubocop', '~> 0.74', require: false
+gem 'timecop'
+gem 'shoulda-matchers', '~> 3.1'
+gem 'simplecov', require: false
+gem 'pry'
+gem 'pry-byebug'
+gem 'pry-doc'
+
+ruby '~> 2.5'

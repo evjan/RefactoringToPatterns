@@ -1,0 +1,21 @@
+AllCops:
+  TargetRubyVersion: 2.5
+  Exclude:
+
+Metrics/LineLength:
+  Max: 120
+
+Style/FrozenStringLiteralComment:
+  EnforcedStyle: never
+
+Style/GuardClause:
+  Enabled: false
+
+# Because otherwise all RSpec tests are too long
+Metrics/BlockLength:
+  Max: 2000
+
+Metrics/AbcSize:
+  # The ABC size is a calculated magnitude, so this number can be an Integer or
+  # a Float.
+  Max: 17
