@@ -14,5 +14,5 @@ class CapitalStrategyTermLoan < CapitalStrategy
   def weighted_average_duration(_)
     12
   end
-  
+
 end

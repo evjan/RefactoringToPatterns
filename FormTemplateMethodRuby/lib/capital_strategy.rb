@@ -1,6 +1,7 @@
 # A abstract Useful comment
 class CapitalStrategy
 
+  # In general, it is Risk Amount x Duration x Risk Factor
   def capital(loan)
     raise 'this method should be overridden'
   end
