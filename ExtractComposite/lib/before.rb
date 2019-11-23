@@ -7,7 +7,9 @@ class MakeCake
   end
 
   def calculate_duration
-    @tasks.reduce(&:duration)
+    dur = 0
+    @tasks.each {|t| dur += t.duration}
+    dur
   end
 end
 
@@ -17,9 +19,15 @@ class MakeBatter
     add_sub_task(Mix.new)
   end
 
+  def add_sub_task(task)
+    @sub_tasks ||= []
+    @sub_tasks << task
+  end
+
   def duration
     dur = 0
-    sub_tasks.each {|st| dur += st.minutes}
+    @sub_tasks.each {|st| dur += st.minutes}
+    dur
   end
 end
 
