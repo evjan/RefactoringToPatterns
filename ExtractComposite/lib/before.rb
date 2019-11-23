@@ -25,9 +25,7 @@ class MakeBatter
   end
 
   def duration
-    dur = 0
-    @sub_tasks.each {|st| dur += st.minutes}
-    dur
+    @sub_tasks.map(&:minutes).reduce(:+)
   end
 end
 
