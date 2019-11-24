@@ -19,8 +19,8 @@ end
 
 class MakeBatter < BakeTask
   def initialize
-    add_sub_task(AddIngredients.new)
-    add_sub_task(Mix.new)
+    add_sub_task AddIngredients.new
+    add_sub_task Mix.new
   end
 end
 
