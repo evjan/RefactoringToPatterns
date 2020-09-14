@@ -4,10 +4,10 @@ import java.lang.reflect.Type;
 
 public abstract class AttributeDescriptor {
     private final String name;
-    private final Class<? extends ClientCode> klass;
+    private final Class klass;
     private final Type type;
 
-    protected AttributeDescriptor(String name, Class<? extends ClientCode> klass, Type type){
+    protected AttributeDescriptor(String name, Class klass, Type type){
 
         this.name = name;
         this.klass = klass;

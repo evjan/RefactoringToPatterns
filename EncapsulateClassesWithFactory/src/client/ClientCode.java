@@ -1,4 +1,9 @@
-package descriptors;
+package client;
+
+import descriptors.DefaultDescriptor;
+import descriptors.ReferenceDescriptor;
+import descriptors.RemoteUser;
+import descriptors.User;
 
 import java.util.ArrayList;
 import java.util.Date;

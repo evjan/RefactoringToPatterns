@@ -1,7 +1,7 @@
 package tests;
 
+import client.ClientCode;
 import descriptors.AttributeDescriptor;
-import descriptors.ClientCode;
 import org.junit.jupiter.api.Test;
 
 import java.util.List;
