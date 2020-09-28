@@ -1,4 +1,5 @@
-let { CapitalStrategyAdvisedLine, CapitalStrategyRevolver, CapitalStrategyTermLoan, Loan } = require('../CapitalStrategies')
+let { CapitalStrategyAdvisedLine, CapitalStrategyRevolver, CapitalStrategyTermLoan } = require('../CapitalStrategies')
+let { Loan } = require('../Loans')
 
 describe('Capital Strategy Advised Line', () => {  
   it('calculates the capital', () => {
