@@ -32,7 +32,9 @@ class CapitalStrategyAdvisedLine extends CapitalStrategy {
 
 class CapitalStrategyTermLoan extends CapitalStrategy {  
   public capital(loan: Loan): number {
-    return loan.getCommitment() * this.duration(loan) * this.riskFactorFor(loan)
+    return loan.getCommitment() * 
+            this.duration(loan) * 
+            this.riskFactorFor(loan)
   }
 
   duration(loan: Loan): number {
